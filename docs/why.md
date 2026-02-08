@@ -58,3 +58,4 @@ Without explicit "kill the terminal" instructions, the agent has no reason to do
 This isn't a bug in VS Code or in any AI agent. It's a documentation gap. The terminal API works correctly — it just requires the caller to manage lifecycle. AI agents are the callers, and they need to be told to manage lifecycle.
 
 Five bullet points in the right file is all it takes.
+
