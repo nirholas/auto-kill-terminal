@@ -130,3 +130,4 @@ The rules are idempotent — running the installer multiple times won't duplicat
   }
 }
 ```
+
