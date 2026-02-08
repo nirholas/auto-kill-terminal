@@ -25,3 +25,4 @@ A curated list of resources related to AI agent terminal management in VS Code.
 ## Articles & Blog Posts
 
 *Know of an article about this problem? Open a PR to add it!*
+
