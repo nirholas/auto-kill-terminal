@@ -81,3 +81,4 @@ Fix the failing unit tests in src/auth/. Run each test file individually to iden
 
 **Terminal rules:** Always use `isBackground: true` for every terminal command, then kill the terminal after.
 ```
+
