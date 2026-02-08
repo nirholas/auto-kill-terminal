@@ -72,3 +72,4 @@ case "$AGENTS" in
 esac
 
 echo "[auto-kill-terminal] Done! AI agents will now clean up terminals."
+
