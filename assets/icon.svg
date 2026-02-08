@@ -23,3 +23,4 @@
   <line x1="30" y1="35" x2="98" y2="93" stroke="url(#red)" stroke-width="6" stroke-linecap="round"/>
   <line x1="98" y1="35" x2="30" y2="93" stroke="url(#red)" stroke-width="6" stroke-linecap="round"/>
 </svg>
+
