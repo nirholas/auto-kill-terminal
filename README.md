@@ -167,18 +167,18 @@ Two-line:
 Background terminals return an ID that the agent can pass to `kill_terminal` (or `await_terminal` → `kill_terminal`). Without that ID, there's no way to clean up.
 
 ```
-Agent                          Terminal
-  │                               │
-  ├── run_in_terminal ──────────► │ (isBackground: true)
-  │   ◄── terminal_id: a7b3c9d1  │
-  │                               │
-  ├── await_terminal ───────────► │ (wait for completion)
-  │   ◄── output + exit code     │
-  │                               │
-  ├── kill_terminal ────────────► │ 💀
-  │                               ╳
-  │
-  ├── (clean slate for next command)
+  Agent                                Terminal
+    |                                      |
+    |-- run_in_terminal -----------------> | (isBackground: true)
+    |   <-- terminal_id: a7b3c9d1         |
+    |                                      |
+    |-- await_terminal ------------------> | (wait for completion)
+    |   <-- output + exit code            |
+    |                                      |
+    |-- kill_terminal -------------------> | x_x
+    |                                      X
+    |
+    |-- (clean slate for next command)
 ```
 
 ## Supported Environments
