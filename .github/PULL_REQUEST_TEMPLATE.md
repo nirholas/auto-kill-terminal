@@ -20,3 +20,4 @@
 - [ ] The template follows the existing format in `templates/`
 - [ ] README compatibility table updated (if adding new agent)
 - [ ] I've read [CONTRIBUTING.md](CONTRIBUTING.md)
+
