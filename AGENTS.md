@@ -26,3 +26,4 @@ auto-kill-terminal/
 - Keep templates minimal — only terminal management rules
 - Test with at least one AI agent before submitting
 - Update the compatibility table in README.md when adding agents
+
