@@ -37,3 +37,4 @@ Teaches AI agents to properly manage VS Code terminal lifecycle — always use b
 ## Keywords
 
 terminal, kill_terminal, await_terminal, run_in_terminal, isBackground, zombie terminal, ghost terminal, Codespaces, VS Code
+
