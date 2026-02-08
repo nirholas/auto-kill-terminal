@@ -1,0 +1,252 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0f23"/>
+      <stop offset="100%" style="stop-color:#1a1a2e"/>
+    </linearGradient>
+    <linearGradient id="termGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d2d44"/>
+      <stop offset="100%" style="stop-color:#1e1e32"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6366f1"/>
+      <stop offset="100%" style="stop-color:#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ef4444"/>
+      <stop offset="100%" style="stop-color:#f87171"/>
+    </linearGradient>
+    <linearGradient id="successGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#34d399"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="redGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgGrad)"/>
+
+  <!-- Animated background particles -->
+  <g opacity="0.3">
+    <circle cx="90" cy="60" r="2" fill="#6366f1">
+      <animate attributeName="cy" values="60;450;60" dur="16s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="16s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="710" cy="100" r="1.5" fill="#8b5cf6">
+      <animate attributeName="cy" values="100;470;100" dur="13s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="750" cy="220" r="2" fill="#ef4444">
+      <animate attributeName="cy" values="220;40;220" dur="19s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="40" cy="380" r="1.5" fill="#f59e0b">
+      <animate attributeName="cy" values="380;80;380" dur="15s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="400" cy="30" r="1.8" fill="#10b981">
+      <animate attributeName="cy" values="30;480;30" dur="20s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Main Terminal Window -->
+  <g transform="translate(40, 25)">
+    <!-- Terminal shadow -->
+    <rect x="4" y="4" width="720" height="450" rx="12" fill="#000" opacity="0.3"/>
+
+    <!-- Terminal body -->
+    <rect width="720" height="450" rx="12" fill="url(#termGrad)" stroke="#3d3d5c" stroke-width="1"/>
+
+    <!-- Terminal header -->
+    <rect width="720" height="36" rx="12" fill="#252538"/>
+    <rect y="24" width="720" height="12" fill="#252538"/>
+
+    <!-- Window controls -->
+    <circle cx="20" cy="18" r="6" fill="#ff5f57"/>
+    <circle cx="42" cy="18" r="6" fill="#febc2e"/>
+    <circle cx="64" cy="18" r="6" fill="#28c840"/>
+
+    <!-- Title -->
+    <text x="360" y="23" fill="#8888aa" font-family="SF Mono, Monaco, Consolas, monospace" font-size="12" text-anchor="middle">auto-kill-terminal — Agent Terminal Session</text>
+
+    <!-- Terminal Content Area -->
+    <g transform="translate(20, 50)">
+
+      <!-- Phase 1: Agent spawns a background terminal -->
+      <!-- Line 1: Agent label -->
+      <g>
+        <text y="20" font-family="SF Mono, Monaco, Consolas, monospace" font-size="13">
+          <tspan fill="#8b5cf6">🤖 Agent</tspan><tspan fill="#6b7280"> spawning background terminal...</tspan>
+          <animate attributeName="opacity" values="0;1;1;1;1;1;1;1;1;1" dur="10s" repeatCount="indefinite" keyTimes="0;0.04;0.1;0.2;0.3;0.5;0.6;0.7;0.8;1"/>
+        </text>
+      </g>
+
+      <!-- Line 2: run_in_terminal call -->
+      <g>
+        <text y="48" font-family="SF Mono, Monaco, Consolas, monospace" font-size="12">
+          <tspan fill="#6366f1">❯</tspan>
+          <tspan fill="#f59e0b"> run_in_terminal</tspan><tspan fill="#6b7280">(</tspan><tspan fill="#10b981">isBackground: true</tspan><tspan fill="#6b7280">)</tspan>
+          <animate attributeName="opacity" values="0;0;1;1;1;1;1;1;1;1" dur="10s" repeatCount="indefinite" keyTimes="0;0.06;0.1;0.2;0.3;0.5;0.6;0.7;0.8;1"/>
+        </text>
+      </g>
+
+      <!-- Line 3: Command being run -->
+      <g>
+        <text y="73" font-family="SF Mono, Monaco, Consolas, monospace" font-size="12">
+          <tspan fill="#6b7280">  $</tspan><tspan fill="#e2e8f0"> npm install &amp;&amp; npm run build</tspan>
+          <animate attributeName="opacity" values="0;0;0;1;1;1;1;1;1;1" dur="10s" repeatCount="indefinite" keyTimes="0;0.08;0.12;0.16;0.2;0.5;0.6;0.7;0.8;1"/>
+        </text>
+      </g>
+
+      <!-- Line 4: Terminal ID returned -->
+      <g>
+        <text y="100" font-family="SF Mono, Monaco, Consolas, monospace" font-size="12">
+          <tspan fill="#6b7280">  → terminal_id: </tspan><tspan fill="#60a5fa">a7b3c9d1</tspan>
+          <animate attributeName="opacity" values="0;0;0;0;1;1;1;1;1;1" dur="10s" repeatCount="indefinite" keyTimes="0;0.12;0.16;0.19;0.22;0.5;0.6;0.7;0.8;1"/>
+        </text>
+      </g>
+
+      <!-- Divider 1 -->
+      <line x1="0" y1="118" x2="680" y2="118" stroke="#3d3d5c" stroke-width="1">
+        <animate attributeName="opacity" values="0;0;0;0;1;1;1;1;1;1" dur="10s" repeatCount="indefinite" keyTimes="0;0.18;0.22;0.24;0.26;0.5;0.6;0.7;0.8;1"/>
+      </line>
+
+      <!-- Phase 2: Command output -->
+      <g>
+        <text y="140" font-family="SF Mono, Monaco, Consolas, monospace" font-size="12">
+          <tspan fill="#10b981">✓</tspan><tspan fill="#8888aa"> added 847 packages in 12s</tspan>
+          <animate attributeName="opacity" values="0;0;0;0;0;1;1;1;1;1" dur="10s" repeatCount="indefinite" keyTimes="0;0.2;0.24;0.27;0.29;0.32;0.5;0.6;0.8;1"/>
+        </text>
+      </g>
+
+      <g>
+        <text y="163" font-family="SF Mono, Monaco, Consolas, monospace" font-size="12">
+          <tspan fill="#10b981">✓</tspan><tspan fill="#8888aa"> Build complete — 3.2s</tspan>
+          <animate attributeName="opacity" values="0;0;0;0;0;0;1;1;1;1" dur="10s" repeatCount="indefinite" keyTimes="0;0.24;0.28;0.31;0.34;0.36;0.39;0.5;0.8;1"/>
+        </text>
+      </g>
+
+      <!-- Processing dots -->
+      <g transform="translate(230, 156)">
+        <circle cx="0" cy="0" r="2.5" fill="#8b5cf6">
+          <animate attributeName="opacity" values="0;0;0;1;0.3;1;0.3;0;0;0" dur="10s" repeatCount="indefinite" keyTimes="0;0.29;0.32;0.34;0.36;0.38;0.40;0.42;0.5;1"/>
+        </circle>
+        <circle cx="10" cy="0" r="2.5" fill="#8b5cf6">
+          <animate attributeName="opacity" values="0;0;0;0.3;1;0.3;1;0;0;0" dur="10s" repeatCount="indefinite" keyTimes="0;0.29;0.33;0.35;0.37;0.39;0.41;0.42;0.5;1"/>
+        </circle>
+        <circle cx="20" cy="0" r="2.5" fill="#8b5cf6">
+          <animate attributeName="opacity" values="0;0;0;0.3;0.3;1;0.3;0;0;0" dur="10s" repeatCount="indefinite" keyTimes="0;0.29;0.34;0.36;0.38;0.40;0.42;0.43;0.5;1"/>
+        </circle>
+      </g>
+
+      <!-- Divider 2 -->
+      <line x1="0" y1="180" x2="680" y2="180" stroke="#3d3d5c" stroke-width="1">
+        <animate attributeName="opacity" values="0;0;0;0;0;0;0;1;1;1" dur="10s" repeatCount="indefinite" keyTimes="0;0.3;0.34;0.38;0.40;0.42;0.44;0.46;0.8;1"/>
+      </line>
+
+      <!-- Phase 3: Agent kills the terminal -->
+      <g>
+        <text y="204" font-family="SF Mono, Monaco, Consolas, monospace" font-size="13">
+          <tspan fill="#8b5cf6">🤖 Agent</tspan><tspan fill="#6b7280"> cleaning up terminal...</tspan>
+          <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;1;1" dur="10s" repeatCount="indefinite" keyTimes="0;0.36;0.40;0.44;0.46;0.48;0.50;0.52;0.55;1"/>
+        </text>
+      </g>
+
+      <g>
+        <text y="232" font-family="SF Mono, Monaco, Consolas, monospace" font-size="12">
+          <tspan fill="#6366f1">❯</tspan>
+          <tspan fill="#ef4444"> kill_terminal</tspan><tspan fill="#6b7280">(id: </tspan><tspan fill="#60a5fa">a7b3c9d1</tspan><tspan fill="#6b7280">)</tspan>
+          <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;1" dur="10s" repeatCount="indefinite" keyTimes="0;0.40;0.44;0.48;0.50;0.52;0.55;0.58;0.60;0.64"/>
+        </text>
+      </g>
+
+      <!-- Kill confirmation with red skull -->
+      <g>
+        <rect y="252" width="460" height="30" rx="6" fill="#ef4444" opacity="0.12">
+          <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0.12;0.12" dur="10s" repeatCount="indefinite" keyTimes="0;0.5;0.54;0.58;0.60;0.62;0.65;0.67;0.70;1"/>
+        </rect>
+        <text y="273" font-family="SF Mono, Monaco, Consolas, monospace" font-size="12" filter="url(#redGlow)">
+          <tspan fill="#ef4444" dx="10">💀 Terminal a7b3c9d1 killed successfully</tspan>
+          <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;1" dur="10s" repeatCount="indefinite" keyTimes="0;0.54;0.58;0.62;0.64;0.66;0.68;0.70;0.72;0.76"/>
+        </text>
+      </g>
+
+      <!-- Phase 4: No zombie terminals message -->
+      <g>
+        <text y="308" font-family="SF Mono, Monaco, Consolas, monospace" font-size="12">
+          <tspan fill="#6b7280">  No orphaned terminals • No blocked sessions</tspan>
+          <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;1" dur="10s" repeatCount="indefinite" keyTimes="0;0.60;0.64;0.68;0.72;0.74;0.76;0.78;0.80;0.84"/>
+        </text>
+      </g>
+
+      <!-- Success banner -->
+      <g transform="translate(0, 330)">
+        <rect x="0" y="0" width="420" height="32" rx="6" fill="#10b981" opacity="0.15">
+          <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0.15" dur="10s" repeatCount="indefinite" keyTimes="0;0.68;0.72;0.76;0.78;0.80;0.82;0.84;0.86;0.90"/>
+        </rect>
+        <text x="12" y="22" fill="#10b981" font-family="SF Mono, Monaco, Consolas, monospace" font-size="13" font-weight="600" filter="url(#glow)">
+          ✓ Clean session — ready for next command
+          <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;1" dur="10s" repeatCount="indefinite" keyTimes="0;0.72;0.76;0.80;0.82;0.84;0.86;0.88;0.90;0.94"/>
+        </text>
+      </g>
+
+      <!-- Blinking cursor at end -->
+      <rect x="0" y="378" width="8" height="16" fill="#e2e8f0">
+        <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;1" dur="10s" repeatCount="indefinite" keyTimes="0;0.80;0.84;0.88;0.90;0.92;0.94;0.95;0.96;0.97"/>
+        <animate attributeName="opacity" values="1;0;1;0;1" dur="1.2s" begin="9.7s" repeatCount="indefinite"/>
+      </rect>
+
+    </g>
+  </g>
+
+  <!-- Floating side icons -->
+  <!-- Skull icon (zombie terminal prevention) -->
+  <g transform="translate(18, 120)" filter="url(#softGlow)">
+    <text font-size="28" fill="#ef4444" opacity="0.6">
+      💀
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="4s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- Terminal icon -->
+  <g transform="translate(770, 180)" filter="url(#softGlow)">
+    <text font-size="22" fill="#6366f1" opacity="0.5">
+      ⬛
+      <animate attributeName="opacity" values="0.3;0.6;0.3" dur="5s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- Broom / cleanup icon -->
+  <g transform="translate(14, 350)" filter="url(#softGlow)">
+    <text font-size="24" fill="#10b981" opacity="0.5">
+      🧹
+      <animate attributeName="opacity" values="0.2;0.6;0.2" dur="6s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- Robot agent icon -->
+  <g transform="translate(768, 380)" filter="url(#softGlow)">
+    <text font-size="24" fill="#8b5cf6" opacity="0.5">
+      🤖
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="3.5s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+</svg>
