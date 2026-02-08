@@ -22,3 +22,4 @@ Use these when you need a compact version for inline agent prompts or task descr
 - Always kill the terminal after the command completes, whether it succeeds or fails
 - If a terminal appears unresponsive, kill it and create a new one
 ```
+
