@@ -54,3 +54,4 @@ bash install.sh --all
 ```
 
 This creates/updates: `.github/copilot-instructions.md`, `CLAUDE.md`, `GEMINI.md`, `AGENTS.md`, and `.cursorrules`.
+
