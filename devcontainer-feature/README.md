@@ -55,3 +55,4 @@ Files created/updated depend on the `agents` option:
 - `claude`: `CLAUDE.md`
 - `gemini`: `GEMINI.md`
 - `cursor`: `.cursorrules`
+
