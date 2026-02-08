@@ -39,3 +39,4 @@ Edit the `postCreateCommand` to change which agents get configured:
 // Copilot + Claude
 "postCreateCommand": "curl -fsSL https://raw.githubusercontent.com/nirholas/auto-kill-terminal/main/install.sh | bash -s -- --copilot --claude"
 ```
+
