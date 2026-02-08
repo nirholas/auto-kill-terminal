@@ -1,0 +1,22 @@
+{
+    "id": "auto-kill-terminal",
+    "version": "1.0.0",
+    "name": "Auto Kill Terminal Rules",
+    "description": "Adds terminal management rules to AI agent instruction files so agents always clean up terminals. Prevents zombie terminal accumulation in GitHub Codespaces and VS Code.",
+    "documentationURL": "https://github.com/nirholas/auto-kill-terminal",
+    "options": {
+        "agents": {
+            "type": "string",
+            "enum": [
+                "all",
+                "copilot",
+                "claude",
+                "gemini",
+                "cursor"
+            ],
+            "default": "all",
+            "description": "Which agent instruction files to create/update"
+        }
+    },
+    "installsAfter": []
+}

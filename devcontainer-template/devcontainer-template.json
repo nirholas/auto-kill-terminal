@@ -1,0 +1,8 @@
+{
+    "id": "auto-kill-terminal",
+    "version": "1.0.0",
+    "name": "Project with Auto Kill Terminal Rules",
+    "description": "A starter project pre-configured with terminal management rules for AI coding agents. Prevents zombie terminal accumulation in GitHub Codespaces.",
+    "documentationURL": "https://github.com/nirholas/auto-kill-terminal",
+    "options": {}
+}

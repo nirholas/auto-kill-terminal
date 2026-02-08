@@ -1,0 +1,23 @@
+// Dev Container with auto-kill-terminal rules pre-configured.
+// AI agents will automatically clean up terminals after commands complete.
+// https://github.com/nirholas/auto-kill-terminal
+{
+    "name": "Project with Terminal Management",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    // Option 1: Use the dev container feature (recommended)
+    // Uncomment to auto-add terminal rules to agent files on container creation:
+    //
+    // "features": {
+    //   "ghcr.io/nirholas/auto-kill-terminal/auto-kill-terminal:1": {}
+    // },
+    // Option 2: Run install script on container creation
+    "postCreateCommand": "curl -fsSL https://raw.githubusercontent.com/nirholas/auto-kill-terminal/main/install.sh | bash -s -- --all",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                // Auto-close terminals when the process exits
+                "terminal.integrated.enablePersistentSessions": false
+            }
+        }
+    }
+}
