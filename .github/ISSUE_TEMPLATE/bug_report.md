@@ -33,3 +33,4 @@ Which template did you use? (e.g., `templates/copilot-instructions.md`)
 ## Additional context
 
 Any other context, screenshots, or terminal output.
+
