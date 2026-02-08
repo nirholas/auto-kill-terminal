@@ -21,3 +21,4 @@ If you discover a security issue (e.g., in the install script), please report it
 | Version | Supported |
 |---------|-----------|
 | main    | ✅        |
+
