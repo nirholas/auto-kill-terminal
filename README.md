@@ -245,31 +245,4 @@ Contributions are welcome! If you've found terminal management tricks for other 
 
 ## License
 
-MIT © [nirholas](https://github.com/nirholas)
-
----
-
-<p align="center">
-  <b>Stop wasting tokens on zombie terminals.</b><br>
-  <sub>Made with 💀 for the AI agent community</sub>
-</p>
-
-<p align="center">
-  <br>
-  ⭐ <b>Found this useful? Star the repo!</b> ⭐<br>
-  <sub>It helps others discover this project and keeps development active</sub><br><br>
-  <a href="https://github.com/nirholas/auto-kill-terminal/stargazers">
-    <img src="https://img.shields.io/github/stars/nirholas/auto-kill-terminal?style=social" alt="Star on GitHub">
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://star-history.com/#nirholas/auto-kill-terminal&Date">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=nirholas/auto-kill-terminal&type=Date&theme=dark" />
-      <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=nirholas/auto-kill-terminal&type=Date" />
-      <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=nirholas/auto-kill-terminal&type=Date" width="600" />
-    </picture>
-  </a>
-</p>
-
+All rights reserved. See [LICENSE](LICENSE).
