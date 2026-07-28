@@ -19,7 +19,7 @@
 
 <br>
 
-<a href="https://github.com/nirholas/auto-kill-terminal/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge&labelColor=000" alt="MIT License" /></a>
+<a href="https://github.com/nirholas/auto-kill-terminal/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-All%20Rights%20Reserved-blue.svg?style=for-the-badge&labelColor=000" alt="License" /></a>
 <a href="https://github.com/nirholas/auto-kill-terminal/stargazers"><img src="https://img.shields.io/github/stars/nirholas/auto-kill-terminal?style=for-the-badge&logo=github&color=yellow&labelColor=000" alt="Stars" /></a>
 <a href="https://github.com/nirholas/auto-kill-terminal/network/members"><img src="https://img.shields.io/github/forks/nirholas/auto-kill-terminal?style=for-the-badge&logo=github&color=purple&labelColor=000" alt="Forks" /></a>
 <a href="#supported-agents"><img src="https://img.shields.io/badge/agents-Copilot%20·%20Claude%20·%20Gemini%20·%20Cursor-brightgreen?style=for-the-badge&labelColor=000" alt="Supported Agents" /></a>

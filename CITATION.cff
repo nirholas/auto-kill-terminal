@@ -8,7 +8,7 @@ authors:
     name: nirholas
 repository-code: "https://github.com/nirholas/auto-kill-terminal"
 url: "https://github.com/nirholas/auto-kill-terminal"
-license: MIT
+license-url: https://github.com/nirholas/auto-kill-terminal/blob/main/LICENSE
 version: "1.0.0"
 date-released: "2026-02-08"
 keywords:

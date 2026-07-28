@@ -28,5 +28,5 @@ A set of copy-paste instruction rules that tell AI coding agents (GitHub Copilot
 
 - Full documentation: https://github.com/nirholas/auto-kill-terminal/blob/main/llms-full.txt
 - Repository: https://github.com/nirholas/auto-kill-terminal
-- License: MIT
+- License: All rights reserved (see LICENSE)
 

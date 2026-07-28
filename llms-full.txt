@@ -2,7 +2,7 @@
 
 > Stop AI agents from leaving zombie terminals in VS Code and GitHub Codespaces.
 > Repository: https://github.com/nirholas/auto-kill-terminal
-> License: MIT
+> License: All rights reserved (see LICENSE)
 
 ## Problem Statement
 
