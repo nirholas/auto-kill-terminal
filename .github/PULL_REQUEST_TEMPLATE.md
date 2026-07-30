@@ -19,5 +19,5 @@
 - [ ] I've tested the rules with at least one AI agent
 - [ ] The template follows the existing format in `templates/`
 - [ ] README compatibility table updated (if adding new agent)
-- [ ] I've read [CONTRIBUTING.md](CONTRIBUTING.md)
+- [ ] I've read [CONTRIBUTING.md](../CONTRIBUTING.md)
 

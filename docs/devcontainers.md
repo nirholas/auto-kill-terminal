@@ -32,7 +32,7 @@ This runs after the container is created and adds terminal rules to all agent in
 
 ## Option 2: Dev Container Feature (Cleanest)
 
-> **Note:** This requires the feature to be published to a container registry. See the publishing steps below.
+> **Note:** The feature is not published to a container registry yet, so this reference does not resolve today. Use Option 1 above, or copy `devcontainer-feature/` into your project and reference it by relative path. See the publishing steps below.
 
 Add to your `.devcontainer/devcontainer.json`:
 

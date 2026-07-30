@@ -18,5 +18,6 @@
             "description": "Which agent instruction files to create/update"
         }
     },
+    "postCreateCommand": "/usr/local/share/auto-kill-terminal/apply.sh",
     "installsAfter": []
 }
