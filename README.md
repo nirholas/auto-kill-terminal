@@ -253,3 +253,7 @@ Full documentation site: **https://nirholas.github.io/auto-kill-terminal/**
 
 - [Getting started](docs/getting-started.md) covers install and first run.
 - [Examples](docs/examples.md) has copy-paste snippets.
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=nirholas/auto-kill-terminal&type=Date)](https://www.star-history.com/#nirholas/auto-kill-terminal&Date)
