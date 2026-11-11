@@ -1,0 +1,17 @@
+{
+  "name": "auto-kill-terminal",
+  "version": "1.0.0",
+  "description": "Terminal management rules that stop AI agents leaving zombie terminals in VS Code and GitHub Codespaces.",
+  "author": {
+    "name": "nirholas"
+  },
+  "repository": "https://github.com/nirholas/auto-kill-terminal",
+  "homepage": "https://nirholas.github.io/auto-kill-terminal/",
+  "keywords": [
+    "terminal",
+    "codespaces",
+    "vscode",
+    "agent-instructions",
+    "zombie-terminal"
+  ]
+}
