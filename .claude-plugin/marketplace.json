@@ -1,0 +1,22 @@
+{
+  "name": "auto-kill-terminal",
+  "owner": {
+    "name": "nirholas"
+  },
+  "description": "Terminal management rules that stop AI agents leaving zombie terminals in VS Code and GitHub Codespaces.",
+  "plugins": [
+    {
+      "name": "auto-kill-terminal",
+      "source": "./plugins/auto-kill-terminal",
+      "description": "Terminal management rules that stop AI agents leaving zombie terminals in VS Code and GitHub Codespaces.",
+      "category": "productivity",
+      "tags": [
+        "terminal",
+        "codespaces",
+        "vscode",
+        "agent-instructions",
+        "zombie-terminal"
+      ]
+    }
+  ]
+}
